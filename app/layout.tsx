@@ -1,5 +1,8 @@
 import '@styles/globals.css'
 
+import Nav from '@components/Nav'
+import Provider from '@components/Provider'
+
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en">
@@ -9,6 +12,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
         </div>
 
         <main className='app'>
+          <Nav />
           {children}
         </main>
       </body>
